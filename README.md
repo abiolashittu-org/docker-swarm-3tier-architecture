@@ -1,6 +1,6 @@
 ## docker-swarm-3tier-architecture
 
-##![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/599ce0eb-4bbc-4476-8ae3-11da6f855e9e)
+![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/599ce0eb-4bbc-4476-8ae3-11da6f855e9e)
 
 Tasks
 Using AWS, create a Docker Swarm that consists of one manager and three worker nodes.
