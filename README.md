@@ -14,4 +14,28 @@ Navigate your AWS Management Console to EC2, and press ‘Launch Instance’ to 
 Configure the rest of the instance details. It is helpful to add a tag as well for later identification.
 
 Name and tags info
-name
+name abi-swarm-managenode
+
+![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/f8db72a1-9317-452c-8c48-100f2f113177)
+##Launch the instance
+![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/a5f761c5-281a-40bc-a302-884c178d87f1)
+
+We can now connect to our instance via SSH.
+
+![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/416ea2e5-87af-4e11-837a-
+114b893e32b0)
+
+##We will connect to our instance with the following command which is provided to us:
+ssh -i "abi.pem" ec2-user-325-173-24-200.compute-1.amazon.com
+
+The above is specific to my project’s instance, but you may fill in the code below with your own instance’s details by following these guidelines:
+
+ssh -i <path-to-your-private-key-file> <your-username>@<public-ip-address>
+
+![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/81d1ffa2-544e-4475-9ce6-31d0fcf077cb)
+
+
+
+
+
+
