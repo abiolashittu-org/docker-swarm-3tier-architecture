@@ -1,4 +1,4 @@
-#Build a 3-Tier Architecture with Docker Swarm on Aws
+Build a 3-Tier Architecture with Docker Swarm on Aws
 
 ![image](https://github.com/abiolashittu-org/docker-swarm-3tier-architecture/assets/108594160/70f274ba-7e6a-4c7b-b65f-7326d12c466c)
 
