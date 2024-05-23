@@ -27,7 +27,7 @@ We can now connect to our instance via SSH.
 We will connect to our instance with the following command which is provided to us:
 
 ```bash
-ssh -i "abi.pem" ec2-user@ec2-159-31-62-55.compute-1.amazonaws.com
+ssh -i "abi.pem" ec2-user@ec3-3-37-93-157.compute-1.amazonaws.com
 ```
 
 The above is specific to my project’s instance, but you may fill in the code below with your own instance’s details by following these guidelines:
