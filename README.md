@@ -64,7 +64,7 @@ We then need to log out and back in to apply the group membership update:
 
 ```bash
 exit
-ssh -i "macpro.pem" ec2-user@ec2-35-153-93-195.compute-1.amazonaws.com
+ssh -i "abi.pem" ec2-user@ec2-33-37-93-157.compute-1.amazonaws.com
 ```
 
 We are now able to run `docker version` without receiving the error and can verify with `groups` that we are part of the “docker” group.
@@ -85,12 +85,12 @@ First, we must find the private IP of our instance. We can do this through `ifco
 ifconfig
 ```
 
-In this specific project, we already knew our IP because our Amazon EC2 username by default was `ec2-user@159.31.62.55`. However, knowing this command is useful anyway to verify and in case it is not always located in our username.
+In this specific project, we already knew our IP because our Amazon EC2 username by default was `ec2-user@33.37.93.157`. However, knowing this command is useful anyway to verify and in case it is not always located in our username.
 
 Now that we have the private IP, we can use it in the above command to initialize the Docker Swarm:
 
 ```bash
-sudo docker swarm init --advertise-addr 159.31.62.55
+sudo docker swarm init --advertise-addr 33.37.93.157
 ```
 
 We enter this and are given this output when finished:
@@ -110,7 +110,7 @@ We will follow similar steps as shown above when we created our manager node ins
 We must also connect to each via SSH:
 
 ```bash
-ssh -i "macpro.pem" ec2-user@<worker-node-public-ip>
+ssh -i "abi.pem" ec2-user@<worker-node-public-ip>
 ```
 
 Now we will install Docker:
@@ -158,7 +158,8 @@ Let's revisit that output that we got when we set up the manager node:
 As shown above, we can add workers to the swarm by running the following command on each worker node:
 
 ```bash
-sudo docker swarm join --token SWMTKN-1-2u3nrpx6h0usx7i3ufseqxms0j0o5ojn9p2yuhto3b1san2ky7-4d5wrnux7q7f925hykorphtum 172.31.62.52:2377
+sudo docker swarm join --token SWMTKN-1-4zxlb8h4i5rjf6jk3t2q3m4n5v8w9lxy2r7a1h0c3p0d9b6v0-1c2d3e4f5g6h7i8j9k0lmnopqrstuvw
+ 180.42.63.72:2377
 ```
 
 If you would like the generic code to do this on your own machine, I will provide it below:
